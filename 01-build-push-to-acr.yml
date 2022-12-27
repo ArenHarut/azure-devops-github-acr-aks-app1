@@ -14,7 +14,7 @@ variables:
   imageRepository: 'arenharutazuredevopsgithubacraksapp'
   containerRegistry: 'aksdevopsacr02.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(ENVIRONMENT_TAG)'
+  tag: $(Environment tag)
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
